@@ -1,0 +1,11 @@
+<div>
+  <my-header></my-header>
+  <div class="container">
+    <h2>Hello {{name}}</h2>
+    <input type="text" placeholder="Enter Starting Number" ref-init  (keyup.enter)="submit(init.value)" />
+    <button class="btn btn-normal" (click)="submit(init.value)">Submit</button>
+    </div>
+    <my-counter [count]="initial"></my-counter>
+  
+  <my-form></my-form>
+</div>
